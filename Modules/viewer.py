@@ -36,7 +36,7 @@ class MemoryViewerGUI(QtWidgets.QMainWindow):
         super(MemoryViewerGUI,self).__init__()
 
         # Load the UI created from UI Designer
-        uic.loadUi("MemoryViewerGUI.ui", self)
+        uic.loadUi("GUI/MemoryViewerGUI.ui", self)
         
         # Set-up Initial Variables
         self.tableValues = []                     # Use to store values to be displayed in the table
@@ -60,7 +60,7 @@ class MemoryViewerGUI(QtWidgets.QMainWindow):
         self.tableValues = []
         
         # Open the jobs.dat file for reading
-        fileData = open("jobs.dat", 'r')
+        fileData = open("Data/jobs.dat", 'r')
         
         # Read a line in the jobs.dat
         dataValue = fileData.readline()

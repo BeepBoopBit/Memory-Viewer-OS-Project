@@ -210,7 +210,7 @@ class MemoryManagement:
             id += 1
 
         # Open the file data to write
-        fileData = open("jobs.dat", 'w')
+        fileData = open("Data/jobs.dat", 'w')
         
         # Write the jobsStr to the file
         fileData.write(jobsStr)     

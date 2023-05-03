@@ -61,7 +61,7 @@ class AddNewProcessGUI(QtWidgets.QMainWindow):
         super(AddNewProcessGUI,self).__init__()
         
         # Load the UI created from UI Designer
-        uic.loadUi("AddNewProcessGUI.ui", self)
+        uic.loadUi("GUI/AddNewProcessGUI.ui", self)
         
         # Connect the fButton_Confirm function to the Button_confirm button
         self.Button_Confirm.clicked.connect(self.fButton_Confirm)
@@ -105,7 +105,7 @@ class FragmentationSolutionGUI(QtWidgets.QMainWindow):
         super(FragmentationSolutionGUI,self).__init__()
         
         # Load the UI created from UI Designer
-        uic.loadUi("FragmentationSolutionGUI.ui", self)
+        uic.loadUi("GUI/FragmentationSolutionGUI.ui", self)
         
         # Connect the fButton_Confirm function to the Button_confirm button
         self.Button_Confirm.clicked.connect(self.fButton_Confirm)
@@ -151,7 +151,7 @@ class MemoryAllocationAlgorithmGUI(QtWidgets.QMainWindow):
         super(MemoryAllocationAlgorithmGUI,self).__init__()
         
         # Load the UI created from UI Designer
-        uic.loadUi("MemoryAllocationAlgorithmGUI.ui", self)
+        uic.loadUi("GUI/MemoryAllocationAlgorithmGUI.ui", self)
         
         # Connect the fButton_Confirm function to the Button_confirm button
         self.Button_Confirm.clicked.connect(self.fButton_Confirm)
@@ -201,7 +201,7 @@ class AddMemoryBlockGUI(QtWidgets.QMainWindow):
         super(AddMemoryBlockGUI,self).__init__()
 
         # Load the UI created from UI Designer
-        uic.loadUi("AddMemoryBlockGUI.ui", self)
+        uic.loadUi("GUI/AddMemoryBlockGUI.ui", self)
         
         # Connect the fButton_Confirm function to the Button_confirm button
         self.Button_Confirm.clicked.connect(self.fButton_Confirm)
@@ -252,7 +252,7 @@ class MainGUI(QtWidgets.QMainWindow):
         super(MainGUI,self).__init__()
         
         # Load the UI created from UI Designer
-        uic.loadUi("MainGUI.ui", self)
+        uic.loadUi("GUI/MainGUI.ui", self)
         
         # Set-up initial values
         self._threadPool = QThreadPool() # Use for threading
