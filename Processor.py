@@ -107,7 +107,7 @@ class MemoryManagement:
         self._flags = [1, 1, 2]
         
         # How fast we process each processes
-        self._sleepValue = 0.15;
+        self._sleepValue = 0.1;
         
         # Total process done by the application
         self._totalProcessing = 0;
@@ -161,6 +161,9 @@ class MemoryManagement:
             # Pause
             while self._flags[1] == 0:
                 pass
+        
+        # For debugging
+        print("The process is not stopped")
         
         # Reset the values (after stopping the processing)
         self.processQueue = []
