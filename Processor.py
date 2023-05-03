@@ -195,7 +195,7 @@ class MemoryManagement:
             
                 # loop through all the jobs, transform it, and store it
                 for jobs in memoryJobs:
-                    jobsStr += str(jobs[0]) + ',' + str(jobs[0]) + '\n'
+                    jobsStr += str(jobs[0]) + ',' + str(jobs[1]) + '\n'
                 
                 # Debugging
                 print(f"[{id}] Block ({availableMemory}): {memoryJobs}")
@@ -203,11 +203,11 @@ class MemoryManagement:
            # For ending of memory block (use for data reading)
             jobsStr += ';;;\n'
             
-            # Increment ID
-            id += 1
-            
             # Sleep for sycronosity and to make sure that we can follow the data process
             time.sleep(self._sleepValue)
+            
+            # Increment ID
+            id += 1
 
         # Open the file data to write
         fileData = open("jobs.dat", 'w')
