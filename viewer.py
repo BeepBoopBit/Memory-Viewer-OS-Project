@@ -10,7 +10,7 @@ from PyQt5 import QtWidgets, uic
 # QMessageBox is used for dialogue boxes for errors
 # https://www.geeksforgeeks.org/pyqt5-qapplication/
 # https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QMessageBox.html
-from PyQt5.QtWidgets import QApplication, QLabel, QTableWidget,QTableWidgetItem,QMessageBox
+from PyQt5.QtWidgets import QApplication, QLabel, QTableWidget,QTableWidgetItem,QMessageBox,QHeaderView
 
 # QRunnable is used for threading in the Qt World (the inerited class)
 # QThreadPool is used for same here (the starter of the thread)
