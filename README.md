@@ -3,12 +3,14 @@
 ## Installation
 
 1. Make sure that you have Python3
-2. Type in your terminal `pip install -r requirement.txt` to install all dependencies
+2. Type in your terminal `bash run.sh -i` to install all dependencies
+
+*[Note: Not all modules in the `requirements.txt` are needed. I just freeze my current set-up]*
 
 ## Usage
 
-1. Open `control.py` by typing the command `python3 control.py`
-2. Open `viewer.py` by typing the command `python3 viewer.py`
+1. Type in your terminal `bash run.sh` to run the application using Python
+2. Type in your terminal `bash run.sh -p3` to run the application using Python3
 
 ## Descriptions
 
